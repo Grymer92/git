@@ -36,11 +36,11 @@ EDITTING:
 
 There are 5 core commands you will want to know:
 
-1) git status \n
-2) git pull \n
-3) git add/rm <filename> \n
-4) git commit [flags] "optional message" \n
-5) git push \n
+| 1) git status |
+2) git pull |
+3) git add/rm <filename> |
+4) git commit [flags] "optional message" |
+5) git push |
 
 1) Gives you an overview of files that have been modified, deleted or created.
    It also makes you aware if they have been added, or have yet to be added.
