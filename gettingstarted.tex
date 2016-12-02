@@ -1,0 +1,127 @@
+\documentclass[12 pt,a4paper]{article}
+\usepackage[a4paper, hmargin={2.8cm, 2.8cm}, vmargin={2.5cm, 2.5cm}]{geometry}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{eso-pic} % \AddToShipoutPicture
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[english]{isodate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[normalem]{ulem}
+\usepackage{float}
+\usepackage{upgreek}
+\usepackage{wrapfig}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{subcaption}
+\usepackage{csquotes}
+\usepackage[figurename = Fig .]{caption}
+
+
+\renewcommand{\comment}[1]{%
+\text{\phantom{(#1)}} \tag{#1}
+}
+
+\newcommand{\Fin}{
+\vfill
+\begin{center}
+\textit{ }\label{FIN}
+\end{center}}
+
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\rm \arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\rm \arabic{subsubsection}}
+\setcounter{tocdepth}{2}
+
+\definecolor{listinggray}{gray}{0.9}
+\lstset{
+language=,
+literate=
+{æ}{{\ae}}1
+{ø}{{\o}}1
+{å}{{\aa}}1
+{Æ}{{\AE}}1
+{Ø}{{\O}}1
+{Å}{{\AA}}1,
+backgroundcolor=\color{listinggray},
+tabsize=3,
+rulecolor=,
+basicstyle=\scriptsize,
+upquote=true,
+aboveskip={0.2\baselineskip},
+columns=fixed,
+showstringspaces=false,
+extendedchars=true,
+breaklines=true,
+prebreak =\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+frame=single,
+showtabs=false,
+showspaces=false,
+numbers=left,
+showlines=true,
+upquote=true,
+showstringspaces=false,
+identifierstyle=\ttfamily,
+keywordstyle=\color[rgb]{0,0,1},
+commentstyle=\color[rgb]{0.133,0.545,0.133},
+stringstyle=\color[rgb]{0.627,0.126,0.941},
+moredelim=**[is][\color{blue}]{@}{@},
+}
+
+\lstdefinestyle{base}{
+emptylines=1,
+breaklines=true,
+basicstyle=\ttfamily\color{black},
+}
+
+\begin{document}
+\noindent This is a workshop task sheet, 
+that will let you experience some of the scenarios you will meet as a git user.
+Throughout this task sheet,
+you will probably need to consult the README.md or search the internet for solutions.
+
+\section*{Starting git}
+This is a task for you to explore the world of github.
+Some of you might already have a user and all, 
+but we will start from scratch.
+
+\subsection*{First steps}
+The advanced users can skip this,
+but do read it through and see if you can learn something anyway.
+\begin{enumerate}
+  \item Make a user on github
+  \item Install git on your machine
+  \item Set up user info (user.name, user.email, user.editor) **OPTIONAL**
+  \item Set up SSH key **OPTIONAL**
+\end{enumerate}
+
+\subsection*{Start your own project}
+With git installed on our system, let us now start working on a project.
+\begin{enumerate}
+\item Make a repository
+\item Clone your own repository to your machine
+\item Make a README.md file and write some information
+\item Push your changes
+\end{enumerate}
+
+\subsection*{Handling working with others}
+Let us now for the purpose of experiencing conflicts, you will have to do as follows.
+
+\begin{enumerate}
+\item Make new directory
+\item Clone your repository to that new directory
+\item Add some changes to the files in your newly cloned directory
+\item Push the changes to your repo
+\item Go to your original directory, make some changes to that same file.
+\item attempt to push those new changes
+\item 
+\end{enumerate}
+
+\Fin
+\end{document}
