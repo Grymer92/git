@@ -53,7 +53,7 @@ There are 5 core commands you will want to know:
    If you accidentally added a file you did not wish to push, then simply use git rm <filename>.
 
    Example:
-   git add mastermind.fsx
+   git add mastermind.fsx ||
    git rm  mastermind.fsx
 
 4) Committing is a way to keep a track record of the overall changes you made during editting,
