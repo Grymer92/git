@@ -3,6 +3,15 @@ THIS IS README!
 Start by making yourself a user on github, if you do not already have one:
 https://github.com/join?source=header-home
 
+Setting up git identity on your own machine, and even change which editor is your core editor.
+
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --global core.editor vim
+
+On windows you will need to do a bit more specific:
+Consult : https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+
 Speeding up the workflow, by adding a fingerprint to your computer.
 In short it means that you allow your computer to hold a key, for which github can recognize when you interact with github.
 
