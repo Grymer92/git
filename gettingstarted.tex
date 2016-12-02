@@ -117,10 +117,16 @@ Let us now for the purpose of experiencing conflicts, you will have to do as fol
 \item Make new directory
 \item Clone your repository to that new directory
 \item Add some changes to the files in your newly cloned directory
-\item Push the changes to your repo
+\item Add, commit and push the changes to your repo
 \item Go to your original directory, make some changes to that same file.
-\item attempt to push those new changes
+\item attempt to add commit and push those new changes(it will fail)
+\item use pull to fetch newest version: You will be met with "CONFLICT (content): Merge conflict in mastermind.fsx" 
+\item Open the mastermind.fsx in your favorite editor Search for HEAD
+\item Handle the conflict
+\item add merged file and add, commit and push
 \end{enumerate}
+
+
 
 \Fin
 \end{document}
