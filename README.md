@@ -22,8 +22,8 @@ Make the passphrase the same as your github account.
 adding to git
 https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 
-Once added ssh in with:
-Log in with passphrase to your github.
+Once added, ssh with:
+Use your log-in with passphrase to your github.
 ssh -T git@github.com
 
 
